@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href={% url "inicio" %}>Volver atras</a>
+       </nav> 
+    <p>
+    <h1>CompráOnline.com </h1>
+    </p>
+    <h3>Clientes registrados: </h3>
+    <p>
+        {% for cliente in clientes %}   
+            <li> {{cliente}} </li>
+        {% endfor %}  
+    </p>
+</body>
+</html>     
